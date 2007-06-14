@@ -1,0 +1,2 @@
+= Details =
+http://developer.kde.org/~wheeler/taglib.html
