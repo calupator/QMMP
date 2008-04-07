@@ -1,7 +1,0 @@
-<!DOCTYPE RCC>
-<RCC version="1.0">
-  <qresource>
-    <file>oss_plugin_cs.qm</file>
-    <file>oss_plugin_de.qm</file>
-  </qresource>
-</RCC>
