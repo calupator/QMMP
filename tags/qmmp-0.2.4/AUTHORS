@@ -1,0 +1,61 @@
+Core Developers:
+
+    Ilya Kotov <forkotov02@hotmail.ru> (idea and base code)
+    Vladimir Kuznetsov <vovanec@gmail.com> (look&feel and many improvements)
+
+Plugin Developers:
+
+    Yuriy Zhuravlev <stalkerg@gmail.com> (jack and oss plugins)
+
+Artwork:
+
+    Andrey Adreev <andreev00@gmail.com>
+
+Translators:
+
+    Brazilian Portuguese - Klaos Lacerda, Bruno Gonçalves
+    Chinese Traditional - lon <lon83129@126.com>
+    Chinese Simplified - lon <lon83129@126.com>
+    Czech - Karel Volný <kvolny@redhat.com>
+    French - Stanislas Zeller <uncensored.assault@gmail.com>
+    German - Stefan Koelling <stefankoelling.ext@googlemail.com>
+    Polish - Grzegorz Gibas <amigib@gmail.com>
+    Russian - Ilya Kotov <for_kotov@hotmail.ru>
+    Turkish - Mustafa GUNAY <mustafagunay@pgmail.com>
+    Ukrainian - Gennadi Motsyo <drool@altlinux.ru>
+
+Thanks to:
+
+    Vadim Kalinnikov <moose@ylsoftware.com> (project hosting)
+
+Based on:
+
+Mq3 - simple mp3 player using Qt (c) 2000
+
+    Brad Hughes <bhughes@trolltech.com>
+
+Promoe - XMMS2 Client (c) 2005-2006
+
+    Tobias Bengtsson <tobbe@tobbe.nu>
+    Chris Gilbert <neovanglist@neovanglist.net>
+    Jonne Lehtinen <jonne.lehtinen@tut.fi>
+    Tobias Rundström <tru@xmms.org>
+    Daniel Svensson <daniel@nittionio.nu>
+
+EQ - A graphical equalizer plugin for XMMS (C) 2002-2006
+
+    Felipe Rivera <liebremx at users.sourceforge.net>
+
+Iterative implementation of a FFT (C) 1999
+
+    Richard Boulton <richard@tartarus.org>
+
+MOC - console audio player for Linux/UNIX (C) 2005
+
+    Damian Pietras <daper@daper.net>
+
+libxmms-flac - XMMS FLAC input plugin (c) 2004-2007
+
+    Josh Coalson
+
+
