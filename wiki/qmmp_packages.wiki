@@ -1,0 +1,19 @@
+#summary A wiki page listing all qmmp packages
+
+
+
+== Arch Linux ==
+
+Arch Linux users can either choose to use the PKGBUILDs from AUR, or add the following repository for precompiled packages to their pacman.conf:
+
+If you use the x86_64 Architecture
+{{{
+[dstr-repo]
+Server = http://dimon.homeftp.org/repo/x86_64/
+}}}
+If you use the i686 Architecture
+{{{
+[dstr-repo]
+Server = http://dimon.homeftp.org/repo/i686
+}}}
+== Mandriva ==
