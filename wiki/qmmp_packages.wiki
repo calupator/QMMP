@@ -22,12 +22,13 @@ Server = http://dimon.homeftp.org/repo/i686
 
 == Ubuntu ==
 
-Ubuntu Jaunty users can add the following PPA to the sources.list:
+If you use Ubuntu you can add the following PPA to your sources.list for SVN builds:
+If you run Ubuntu Jaunty Jackalope:
 {{{
 deb http://ppa.launchpad.net/stiff.ru/ppa/ubuntu jaunty main 
 deb-src http://ppa.launchpad.net/stiff.ru/ppa/ubuntu jaunty main 
 }}}
-Ubuntu Hardy users can add the following PPA to the sources.list:
+and if you run Ubuntu Hardy Heron:
 {{{
 deb http://ppa.launchpad.net/stiff.ru/ppa/ubuntu hardy main 
 deb-src http://ppa.launchpad.net/stiff.ru/ppa/ubuntu hardy main 
