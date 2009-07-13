@@ -21,3 +21,14 @@ Server = http://dimon.homeftp.org/repo/i686
 == Mandriva ==
 
 == Ubuntu ==
+
+Ubuntu Jaunty users can add the following PPA to the sources.list:
+{{{
+deb http://ppa.launchpad.net/stiff.ru/ppa/ubuntu jaunty main 
+deb-src http://ppa.launchpad.net/stiff.ru/ppa/ubuntu jaunty main 
+}}}
+Ubuntu Hardy users can add the following PPA to the sources.list:
+{{{
+deb http://ppa.launchpad.net/stiff.ru/ppa/ubuntu hardy main 
+deb-src http://ppa.launchpad.net/stiff.ru/ppa/ubuntu hardy main 
+}}}
