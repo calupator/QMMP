@@ -33,3 +33,13 @@ and if you run Ubuntu Hardy Heron:
 deb http://ppa.launchpad.net/stiff.ru/ppa/ubuntu hardy main 
 deb-src http://ppa.launchpad.net/stiff.ru/ppa/ubuntu hardy main 
 }}}
+
+After adding the lines above to your sources.list, open up a terminal and enter
+{{{
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 2C2B0858
+}}}
+Now finally run
+{{{
+sudo apt-get update
+}}}
+to to re-load the details of each software archive.
