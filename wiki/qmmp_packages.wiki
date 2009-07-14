@@ -23,7 +23,8 @@ If you run 2009.1 you can download the packages from [http://qmmp.ylsoftware.com
 
 == Ubuntu ==
 
-If you use Ubuntu you can add the following PPA to your sources.list for SVN builds:
+You can add the following PPA to your /etc/apt/sources.list for SVN builds.
+
 If you run Ubuntu Jaunty Jackalope:
 {{{
 deb http://ppa.launchpad.net/stiff.ru/ppa/ubuntu jaunty main 
