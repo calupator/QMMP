@@ -4,7 +4,7 @@
 
 == Arch Linux ==
 
-Stable Qmmp 0.3.0 packages can be found in the [community] repository.
+A package for Qmmp 0.3.0 can be found in the `[community]` repository.
 For SVN builds you can either choose to use the [http://aur.archlinux.org/packages.php?ID=21736 PKGBUILD] from the AUR, or add the following repositories for precompiled packages to your pacman.conf:
 
 If you use the x86_64 Architecture add the following:
@@ -19,7 +19,7 @@ Server = http://dimon.homeftp.org/repo/i686
 }}}
 
 == Mandriva ==
-If you run 2009.1 you can download the packages from [http://qmmp.ylsoftware.com/files/mandriva/2009.1/ here] to install stable 0.3.0
+If you run Mandriva 2009.1 you can download the packages from [http://qmmp.ylsoftware.com/files/mandriva/2009.1/ here] to install the stable Qmmp 0.3.0
 
 == Ubuntu ==
 
