@@ -44,4 +44,7 @@ Now finally run
 {{{
 sudo apt-get update
 }}}
-to re-load the details of each software archive.
+to re-load the details of each software archive. Now you can install Qmmp through the package 'qmmp':
+{{{
+sudo apt-get install qmmp
+}}}
