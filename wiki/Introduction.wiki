@@ -1,5 +1,3 @@
-#summary Introduction page.
-
 = Introduction =
 
 QMMP is a media player for the Linux desktop environment.  It is based upon Qt4.  Also, it is a player that is designed to be a Linux replacement for WinAmp, and was even designed to be able to use the WinAmp2 skins, as well as those from XMMS.  Anyone who has used WinAmp will be able to start using QMMP right away and feel right at home.
