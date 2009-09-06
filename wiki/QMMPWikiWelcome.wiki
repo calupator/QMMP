@@ -1,0 +1,51 @@
+#summary This is the wiki intro page.
+<font color=blue>
+
+= Welcome =
+<font color=black>
+
+Welcome to the QMMP Wiki!  We hope you enjoy your visit.
+
+The best way to get started is to use the table of contents below to find the information you desire.  The first section will get you familiar with the program, and the others will tell you more about the details and inner workings.  If you wish for more information, please let us know.
+
+Enjoy!
+
+<br><font color=blue>
+= Table of Contents =
+<font color=black>
+*Introduction*
+ QMMP is a media player for everything audio
+*History*
+ Created by 
+*Other Players*
+
+*Features and Components*
+ Settings menu
+  Appearance
+   Skins<br>
+   Fonts
+  Playlist
+   Metadata<br>
+   Song Display
+  Plugins
+   Input<br>
+   Output<br>
+   Visualization<br>
+   Effects<br>
+   General
+  Advanced
+   Audio<br>
+   Visibility Control<br>
+   File Dialog<br>
+   Transparency
+  Connectivity
+   Proxy
+
+*Media Types*
+ Internet Radio Streams<br>
+ MP3 Files
+
+*How-To*
+ Install<br>
+ Quick Start<br>
+ Play
