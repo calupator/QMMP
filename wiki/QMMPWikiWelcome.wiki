@@ -12,7 +12,7 @@ Enjoy!
 <br><font color=blue>
 = Table of Contents =
 <font color=black>
-*Introduction*
+Introduction|*Introduction*
  QMMP is a media player for everything audio
 *History*
  Created by 
