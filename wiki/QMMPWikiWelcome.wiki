@@ -1,4 +1,4 @@
-#summary This is the wiki intro page.
+
 <font color=blue>
 
 = Welcome =
