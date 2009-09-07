@@ -5,3 +5,5 @@ QMMP is a media player for the Linux desktop environment.  It is based upon Qt4.
 QMMP will play mp3 files, streaming Internet media, and other types of local or remote audio formats.
 
 The program is designed and owned by Vladimir  Kuznetsov (vovanec), Ilya Kotov (trailuser02), and  Uriy Zhuravlev (stalkerg); all of whom are involved in other projects as well.
+
+By the way, if you didn't notice, the name comes from "<u><b>Q</b></u>t-based <u><b>M</b></u>ulti<u><b>m</b></u>edia <u><b>P</b></u>layer".
