@@ -2,7 +2,7 @@
  * [Introduction Introduction]
  * [ToC Table of Contents]
  ** [second level]
-  * [alternative level]
+
 
  * [qmmp_packages Packages]
 <wiki:toc max_depth="1" />
