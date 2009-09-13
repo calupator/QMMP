@@ -1,3 +1,4 @@
- * [QMMPWikiWelcome Welcome & TOC]
+ * [QMMPWikiWelcome Welcome]
  * [Introduction Introduction]
+* [Table of Contents]
  * [qmmp_packages Packages]
