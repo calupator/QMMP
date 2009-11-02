@@ -1,0 +1,13 @@
+Entwickler:
+
+    Ilya Kotov <forkotov02@hotmail.ru> (Idee und Programmierung)
+    Vladimir Kuznetsov <vovanec@gmail.com> (Aussehen des Programms und viele Verbesserungen)
+
+Modul-Entwickler:
+
+    Yuriy Zhuravlev <stalkerg@gmail.com> (JACK- und OSS-Modul)
+
+Artwork:
+
+    Andrey Adreev <andreev00@gmail.com>
+
