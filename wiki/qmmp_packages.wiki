@@ -23,17 +23,18 @@ If you run Mandriva 2009.1 you can download the packages from [http://qmmp.ylsof
 
 == Ubuntu ==
 
-You can add the following PPA to your /etc/apt/sources.list for SVN builds.
+You can add the following PPA to your /etc/apt/sources.list for latest builds.
+
+If you run Ubuntu Karmic Koala:
+{{{
+deb http://ppa.launchpad.net/stiff.ru/qmmp-releases/ubuntu karmic main
+deb-src http://ppa.launchpad.net/stiff.ru/qmmp-releases/ubuntu karmic main
+}}}
 
 If you run Ubuntu Jaunty Jackalope:
 {{{
-deb http://ppa.launchpad.net/stiff.ru/ppa/ubuntu jaunty main 
-deb-src http://ppa.launchpad.net/stiff.ru/ppa/ubuntu jaunty main 
-}}}
-and if you run Ubuntu Hardy Heron:
-{{{
-deb http://ppa.launchpad.net/stiff.ru/ppa/ubuntu hardy main 
-deb-src http://ppa.launchpad.net/stiff.ru/ppa/ubuntu hardy main 
+deb http://ppa.launchpad.net/stiff.ru/qmmp-releases/ubuntu jaunty main
+deb-src http://ppa.launchpad.net/stiff.ru/qmmp-releases/ubuntu jaunty main
 }}}
 
 After adding the lines above to your sources.list, open up a terminal and enter
