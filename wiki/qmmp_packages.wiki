@@ -3,7 +3,6 @@
 
 
 == Arch Linux ==
-
 A package for Qmmp 0.3.1 can be found in the `[community]` repository.
 For SVN builds you can either choose to use the [http://aur.archlinux.org/packages.php?ID=21736 PKGBUILD] from the AUR, or add the following repositories for precompiled packages to your pacman.conf:
 
@@ -21,8 +20,14 @@ Server = http://dimon.homeftp.org/repo/i686
 == Mandriva ==
 If you run Mandriva 2009.1 you can download the packages from [http://qmmp.ylsoftware.com/files/mandriva/2009.1/0.3.1 here] to install the stable Qmmp 0.3.1
 
-== Ubuntu ==
 
+== openSUSE ==
+openSUSE packages are available from the PackMan repo: http://packman.links2linux.org/package/qmmp
+
+Alternatively, you can use the 1-Click install:<br>
+[http://packman.links2linux.org/install/qmmp http://packman.links2linux.org/images/ympbutton.png]
+
+== Ubuntu ==
 You can add the following PPA to your /etc/apt/sources.list for latest builds.
 
 If you run Ubuntu Karmic Koala:
