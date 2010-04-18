@@ -1,0 +1,8 @@
+add_subdirectory(Input)
+add_subdirectory(Output)
+add_subdirectory(Visual)
+add_subdirectory(Effect)
+add_subdirectory(General)
+add_subdirectory(PlaylistFormats)
+add_subdirectory(CommandLineOptions)
+add_subdirectory(FileDialogs)
