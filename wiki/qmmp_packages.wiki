@@ -3,7 +3,7 @@
 
 
 == Arch Linux ==
-A package for Qmmp 0.3.1 can be found in the `[community]` repository.
+The latest stable releases of Qmmp can be found in the official `[community]` repository of Arch Linux.
 For SVN builds you can either choose to use the [http://aur.archlinux.org/packages.php?ID=21736 PKGBUILD] from the AUR, or add the following repositories for precompiled packages to your pacman.conf:
 
 If you use the x86_64 Architecture add the following:
