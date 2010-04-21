@@ -1,7 +1,5 @@
 #summary A wiki page listing all qmmp packages
 
-
-
 == Arch Linux ==
 The latest stable releases of Qmmp can be found in the official `[community]` repository of Arch Linux.
 For SVN builds you can either choose to use the [http://aur.archlinux.org/packages.php?ID=21736 PKGBUILD] from the AUR, or add the following repositories for precompiled packages to your pacman.conf:
@@ -17,13 +15,19 @@ If you use the i686 Architecture add the following:
 Server = http://dimon.homeftp.org/repo/i686
 }}}
 
+== Debian ==
+
+Stable Qmmp releases currently can be found in the Testing and Unstable repository. You can install qmmp with the following command, if you have one of these Repositories activated:
+{{{
+sudo apt-get install qmmp
+}}}
+
 == Mandriva ==
 If you run Mandriva 2010.0 you can install the packages by following command:
 {{{
 urpmi qmmp
 }}}
 Alternatively, you can use unofficial packages from [http://qmmp.ylsoftware.com/files/mandriva/ here]
-
 
 == openSUSE ==
 openSUSE packages are available from the PackMan repo: http://packman.links2linux.org/package/qmmp
