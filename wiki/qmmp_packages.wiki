@@ -18,7 +18,11 @@ Server = http://dimon.homeftp.org/repo/i686
 }}}
 
 == Mandriva ==
-If you run Mandriva 2009.1 you can download the packages from [http://qmmp.ylsoftware.com/files/mandriva/2009.1/0.3.1 here] to install the stable Qmmp 0.3.1
+If you run Mandriva 2010.0 you can install the packages by following command:
+{{{
+urpmi qmmp
+}}}
+Alternatively, you can use unofficial packages from [http://qmmp.ylsoftware.com/files/mandriva/ here]
 
 
 == openSUSE ==
