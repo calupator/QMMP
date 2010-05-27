@@ -2,18 +2,7 @@
 
 == Arch Linux ==
 The latest stable releases of Qmmp can be found in the official `[community]` repository of Arch Linux.
-For SVN builds you can either choose to use the [http://aur.archlinux.org/packages.php?ID=21736 PKGBUILD] from the AUR, or add the following repositories for precompiled packages to your pacman.conf:
-
-If you use the x86_64 Architecture add the following:
-{{{
-[dstr-repo]
-Server = http://dimon.homeftp.org/repo/x86_64/
-}}}
-If you use the i686 Architecture add the following:
-{{{
-[dstr-repo]
-Server = http://dimon.homeftp.org/repo/i686
-}}}
+For SVN builds you can either choose to use the [http://aur.archlinux.org/packages.php?ID=21736 PKGBUILD] from the AUR.
 
 == Debian ==
 
