@@ -2,7 +2,7 @@
 
 == Arch Linux ==
 The latest stable releases of Qmmp can be found in the official `[community]` repository of Arch Linux.
-For SVN builds you can either choose to use the [http://aur.archlinux.org/packages.php?ID=21736 PKGBUILD] from the AUR.
+For SVN builds you can use the [http://aur.archlinux.org/packages.php?ID=21736 PKGBUILD] from the AUR.
 
 == Debian ==
 
