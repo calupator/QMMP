@@ -1,0 +1,160 @@
+= Qmmp translation howto =
+
+==How to update existing translation==
+
+1. Install Qt Linguist and subversion.
+
+2. Download latest source using svn.
+
+Stable version:
+{{{
+svn checkout http://qmmp.googlecode.com/svn/branches/qmmp-0.4/ qmmp-svn
+}}}
+Development version:
+{{{
+svn checkout http://qmmp.googlecode.com/svn/trunk/ qmmp-svn
+}}}
+
+3. Find all files with mask `*_code.ts` inside downloaded sources and update them using qt linguist. (code - your locale code, i.e. ru - Russian, zh_CN - Chinese simplified, etc).
+
+4. Go to qmmp-svn/ui/src/txt and update 4 text files (authors_code.txt description_code.txt thanks_code.txt translators_code.txt) with help of your favourite text editor.
+
+5. Go to qmmp sources and create patch.
+{{{
+cd qmmp-svn
+svn diff > qmmp_translation_update_code.diff
+}}}
+
+6. Send qmmp_translation_update_code.diff to forkotov02 AT hotmail.ru
+
+
+==How to create new translation==
+
+1. Install Qt Linguist and subversion.
+
+2. Download latest source using svn.
+
+Stable version:
+{{{
+svn checkout http://qmmp.googlecode.com/svn/branches/qmmp-0.4/ qmmp-svn
+}}}
+Development version:
+{{{
+svn checkout http://qmmp.googlecode.com/svn/trunk/ qmmp-svn
+}}}
+
+3. Determinate your locale code (ru - Russian, sk - Slovak, etc)
+
+4. Open qmmp-svn/qmmp/ui/ui.pro and add your file name to translations list.
+
+Before:
+{{{
+TRANSLATIONS = translations/qmmp_ru.ts \
+    translations/qmmp_tr.ts \
+    translations/qmmp_zh_CN.ts \
+    translations/qmmp_cs.ts \
+    translations/qmmp_pt_BR.ts \
+    translations/qmmp_uk_UA.ts \
+    translations/qmmp_zh_TW.ts \
+    translations/qmmp_de.ts \
+    translations/qmmp_pl_PL.ts \
+    translations/qmmp_it.ts \
+    translations/qmmp_lt.ts \
+    translations/qmmp_hu.ts \
+    translations/qmmp_nl.ts \
+    translations/qmmp_ja.ts \
+    translations/qmmp_es.ts
+}}}
+After
+{{{
+TRANSLATIONS = translations/qmmp_ru.ts \
+    translations/qmmp_tr.ts \
+    translations/qmmp_zh_CN.ts \
+    translations/qmmp_cs.ts \
+    translations/qmmp_pt_BR.ts \
+    translations/qmmp_uk_UA.ts \
+    translations/qmmp_zh_TW.ts \
+    translations/qmmp_de.ts \
+    translations/qmmp_pl_PL.ts \
+    translations/qmmp_it.ts \
+    translations/qmmp_lt.ts \
+    translations/qmmp_hu.ts \
+    translations/qmmp_nl.ts \
+    translations/qmmp_ja.ts \
+    translations/qmmp_es.ts \
+    translations/qmmp_code.ts  #code - your locale code
+}}}
+
+5. Update qmmp-svn/qmmp/ui/translations/qmmp_locales.qrc
+
+{{{
+<!DOCTYPE RCC>
+<RCC version="1.0">
+  <qresource>
+    <file>qmmp_ru.qm</file>
+    <file>qmmp_tr.qm</file>
+    <file>qmmp_zh_CN.qm</file>
+    <file>qmmp_uk_UA.qm</file>
+    <file>qmmp_zh_TW.qm</file>
+    <file>qmmp_cs.qm</file>
+    <file>qmmp_pt_BR.qm</file>
+    <file>qmmp_de.qm</file>
+    <file>qmmp_pl_PL.qm</file>
+    <file>qmmp_fr.qm</file>
+    <file>qmmp_it.qm</file>
+    <file>qmmp_kk.qm</file>
+    <file>qmmp_lt.qm</file>
+    <file>qmmp_hu.qm</file>
+    <file>qmmp_nl.qm</file>
+    <file>qmmp_ja.qm</file>
+    <file>qmmp_code.qm</file> <!--add this line-->
+  </qresource>
+</RCC>
+}}}
+
+6. Repeat 4-5 steps for all qmmp plugins and libraries.
+
+7. Generate empty translation files.
+{{{
+cd qmmp-svn
+./update-ts.sh
+}}}
+
+8. Find all generated files with mask `*_code.ts` inside downloaded sources and update them with qt linguist.
+
+9. Go to qmmp-svn/ui/src/txt and create 4 text files (authors_code.txt description_code.txt, thanks_code.txt, translators_code.txt). Use authors_en.txt description_en.txt, thanks_en.txt and translators_en.txt as reference.
+
+10. Update qmmp-svn/ui/src/stuff.qrc
+{{{
+<!DOCTYPE RCC>
+<RCC version="1.0">
+  <qresource>
+  ................
+
+    <!-- add this 4 lines -->
+    <file>txt/authors_code.txt</file>
+    <file>txt/thanks_code.txt</file>       
+    <file>txt/translators_code.txt</file>  
+    <file>txt/description_code.txt</file>
+
+   ..............
+</RCC>
+}}}
+
+11. Add all new files to svn.
+{{{
+cd qmmp-svn
+svn add --force --depth=infinity *
+}}}
+
+12. Create patch with new translations.
+{{{
+svn diff > qmmp_new_translation_code.diff
+}}}
+
+13. Send qmmp_translation_update_code.diff to forkotov02 AT hotmail.ru
+
+==Links==
+http://doc.qt.nokia.com/4.7-snapshot/linguist-manual.html
+
+_feedback: forkotov02 AT hotmail.ru_
