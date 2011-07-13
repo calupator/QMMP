@@ -8,7 +8,7 @@
 
 Stable version:
 {{{
-svn checkout http://qmmp.googlecode.com/svn/branches/qmmp-0.4/ qmmp-svn
+svn checkout http://qmmp.googlecode.com/svn/branches/qmmp-0.5/ qmmp-svn
 }}}
 Development version:
 {{{
