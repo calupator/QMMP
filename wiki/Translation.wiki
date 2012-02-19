@@ -122,10 +122,10 @@ cd qmmp-svn
   ................
 
     <!-- add this 4 lines -->
-    <file>txt/authors_code.txt</file>
-    <file>txt/thanks_code.txt</file>       
-    <file>txt/translators_code.txt</file>  
-    <file>txt/description_code.txt</file>
+    <file>authors_code.txt</file>
+    <file>thanks_code.txt</file>       
+    <file>translators_code.txt</file>  
+    <file>description_code.txt</file>
 
    ..............
 </RCC>
