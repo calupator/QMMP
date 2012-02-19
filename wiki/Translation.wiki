@@ -12,12 +12,12 @@ svn checkout http://qmmp.googlecode.com/svn/branches/qmmp-0.5/ qmmp-svn
 }}}
 Development version:
 {{{
-svn checkout http://qmmp.googlecode.com/svn/trunk/ qmmp-svn
+svn checkout http://qmmp.googlecode.com/svn/trunk/qmmp qmmp-svn
 }}}
 
 3. Find all files with mask `*_code.ts` inside downloaded sources and update them using qt linguist. (code - your locale code, i.e. ru - Russian, zh_CN - Chinese simplified, etc).
 
-4. Go to qmmp-svn/ui/src/txt and update 4 text files (authors_code.txt description_code.txt thanks_code.txt translators_code.txt) with help of your favourite text editor.
+4. Go to qmmp-svn/ui/src/qmmpui/txt and update 4 text files (authors_code.txt description_code.txt thanks_code.txt translators_code.txt) with help of your favourite text editor.
 
 5. Go to qmmp sources and create patch.
 {{{
@@ -36,7 +36,7 @@ svn diff > qmmp_translation_update_code.diff
 
 Stable version:
 {{{
-svn checkout http://qmmp.googlecode.com/svn/branches/qmmp-0.4/ qmmp-svn
+svn checkout http://qmmp.googlecode.com/svn/branches/qmmp-0.5/ qmmp-svn
 }}}
 Development version:
 {{{
@@ -45,47 +45,47 @@ svn checkout http://qmmp.googlecode.com/svn/trunk/ qmmp-svn
 
 3. Determinate your locale code (ru - Russian, sk - Slovak, etc)
 
-4. Open qmmp-svn/qmmp/ui/ui.pro and add your file name to translations list.
+4. Open qmmp-svn/qmmp/qmmpui/qmmpui.pro and add your file name to translations list.
 
 Before:
 {{{
-TRANSLATIONS = translations/qmmp_ru.ts \
-    translations/qmmp_tr.ts \
-    translations/qmmp_zh_CN.ts \
-    translations/qmmp_cs.ts \
-    translations/qmmp_pt_BR.ts \
-    translations/qmmp_uk_UA.ts \
-    translations/qmmp_zh_TW.ts \
-    translations/qmmp_de.ts \
-    translations/qmmp_pl_PL.ts \
-    translations/qmmp_it.ts \
-    translations/qmmp_lt.ts \
-    translations/qmmp_hu.ts \
-    translations/qmmp_nl.ts \
-    translations/qmmp_ja.ts \
-    translations/qmmp_es.ts
+TRANSLATIONS = translations/libqmmpui_ru.ts \
+    translations/libqmmpui_tr.ts \
+    translations/libqmmpui_zh_CN.ts \
+    translations/libqmmpui_cs.ts \
+    translations/libqmmpui_pt_BR.ts \
+    translations/libqmmpui_uk_UA.ts \
+    translations/libqmmpui_zh_TW.ts \
+    translations/libqmmpui_de.ts \
+    translations/libqmmpui_pl_PL.ts \
+    translations/libqmmpui_it.ts \
+    translations/libqmmpui_lt.ts \
+    translations/libqmmpui_hu.ts \
+    translations/libqmmpui_nl.ts \
+    translations/libqmmpui_ja.ts \
+    translations/libqmmpui_es.ts
 }}}
 After
 {{{
-TRANSLATIONS = translations/qmmp_ru.ts \
-    translations/qmmp_tr.ts \
-    translations/qmmp_zh_CN.ts \
-    translations/qmmp_cs.ts \
-    translations/qmmp_pt_BR.ts \
-    translations/qmmp_uk_UA.ts \
-    translations/qmmp_zh_TW.ts \
-    translations/qmmp_de.ts \
-    translations/qmmp_pl_PL.ts \
-    translations/qmmp_it.ts \
-    translations/qmmp_lt.ts \
-    translations/qmmp_hu.ts \
-    translations/qmmp_nl.ts \
-    translations/qmmp_ja.ts \
-    translations/qmmp_es.ts \
-    translations/qmmp_code.ts  #code - your locale code
+TRANSLATIONS = translations/libqmmpui_ru.ts \
+    translations/libqmmpui_tr.ts \
+    translations/libqmmpui_zh_CN.ts \
+    translations/libqmmpui_cs.ts \
+    translations/libqmmpui_pt_BR.ts \
+    translations/libqmmpui_uk_UA.ts \
+    translations/libqmmpui_zh_TW.ts \
+    translations/libqmmpui_de.ts \
+    translations/libqmmpui_pl_PL.ts \
+    translations/libqmmpui_it.ts \
+    translations/libqmmpui_lt.ts \
+    translations/libqmmpui_hu.ts \
+    translations/libqmmpui_nl.ts \
+    translations/libqmmpui_ja.ts \
+    translations/libqmmpui_es.ts \
+    translations/libqmmpui_code.ts  #code - your locale code
 }}}
 
-5. Update qmmp-svn/qmmp/ui/translations/qmmp_locales.qrc
+5. Update qmmp-svn/src/qmmpui/translations/libqmmpui_locales.qrc
 
 {{{
 <!DOCTYPE RCC>
@@ -122,9 +122,9 @@ cd qmmp-svn
 
 8. Find all generated files with mask `*_code.ts` inside downloaded sources and update them with qt linguist.
 
-9. Go to qmmp-svn/ui/src/txt and create 4 text files (authors_code.txt description_code.txt, thanks_code.txt, translators_code.txt). Use authors_en.txt description_en.txt, thanks_en.txt and translators_en.txt as reference.
+9. Go to qmmp-svn/src/qmmpui/txt and create 4 text files (authors_code.txt description_code.txt, thanks_code.txt, translators_code.txt). Use authors_en.txt description_en.txt, thanks_en.txt and translators_en.txt as reference.
 
-10. Update qmmp-svn/ui/src/stuff.qrc
+10. Update qmmp-svn/src/qmmpui/txt/txt.qrc
 {{{
 <!DOCTYPE RCC>
 <RCC version="1.0">
