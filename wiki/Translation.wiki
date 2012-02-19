@@ -6,11 +6,6 @@
 
 2. Download latest source using svn.
 
-Stable version:
-{{{
-svn checkout http://qmmp.googlecode.com/svn/branches/qmmp-0.5/ qmmp-svn
-}}}
-Development version:
 {{{
 svn checkout http://qmmp.googlecode.com/svn/trunk/qmmp qmmp-svn
 }}}
@@ -34,11 +29,6 @@ svn diff > qmmp_translation_update_code.diff
 
 2. Download latest source using svn.
 
-Stable version:
-{{{
-svn checkout http://qmmp.googlecode.com/svn/branches/qmmp-0.5/ qmmp-svn
-}}}
-Development version:
 {{{
 svn checkout http://qmmp.googlecode.com/svn/trunk/ qmmp-svn
 }}}
