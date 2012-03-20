@@ -158,13 +158,15 @@ svn checkout http://qmmp.googlecode.com/svn/trunk/qmmp-plugin-pack qmmp-plugin-p
 
 3. Find all files with mask `*_code.ts` inside downloaded sources and update them using qt linguist. (code - your locale code, i.e. ru - Russian, zh_CN - Chinese simplified, etc).
 
-4. Go to qmmp-plugin-pack sources and create patch.
+4. Go to qmmp-plugin-pack-svn/src/Ui/qsui/txt and update qsui_authors_code.txt  with help of your favourite text editor. 
+
+5. Go to qmmp-plugin-pack sources and create patch.
 {{{
 cd qmmp-plugin-pack-svn
 svn diff > plugins_translation_update_code.diff
 }}}
 
-5. Send plugins_translation_update_code.diff to forkotov02 AT hotmail.ru
+6. Send plugins_translation_update_code.diff to forkotov02 AT hotmail.ru
 
 
 ==How to create new translation==
