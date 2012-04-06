@@ -12,6 +12,12 @@ svn checkout http://qmmp.googlecode.com/svn/trunk/qmmp qmmp-svn
 
 3. Find all files with mask `*_code.ts` inside downloaded sources and update them using qt linguist. (code - your locale code, i.e. ru - Russian, zh_CN - Chinese simplified, etc).
 
+
+You can use following command:
+{{{
+find qmmp-svn -iname \*_code.ts -exec linguist "{}" \;
+}}}
+
 4. Go to qmmp-svn/ui/src/qmmpui/txt and update 4 text files (authors_code.txt description_code.txt thanks_code.txt translators_code.txt) with help of your favourite text editor.
 
 5. Go to qmmp sources and create patch.
@@ -112,6 +118,12 @@ cd qmmp-svn
 
 8. Find all generated files with mask `*_code.ts` inside downloaded sources and update them with qt linguist.
 
+You can use following command:
+{{{
+find qmmp-svn -iname \*_code.ts -exec linguist "{}" \;
+}}}
+
+
 9. Go to qmmp-svn/src/qmmpui/txt and create 4 text files (authors_code.txt description_code.txt, thanks_code.txt, translators_code.txt). Use authors_en.txt description_en.txt, thanks_en.txt and translators_en.txt as reference.
 
 10. Update qmmp-svn/src/qmmpui/txt/txt.qrc
@@ -157,6 +169,11 @@ svn checkout http://qmmp.googlecode.com/svn/trunk/qmmp-plugin-pack qmmp-plugin-p
 }}}
 
 3. Find all files with mask `*_code.ts` inside downloaded sources and update them using qt linguist. (code - your locale code, i.e. ru - Russian, zh_CN - Chinese simplified, etc).
+
+You can use following command:
+{{{
+find qmmp-plugin-pack-svn -iname \*_code.ts -exec linguist "{}" \;
+}}}
 
 4. Go to qmmp-plugin-pack-svn/src/Ui/qsui/txt and update qsui_authors_code.txt  with help of your favourite text editor. 
 
@@ -257,6 +274,12 @@ cd qmmp-plugin-pack-svn
 }}}
 
 8. Find all generated files with mask `*_code.ts` inside downloaded sources and update them with qt linguist.
+
+
+You can use following command:
+{{{
+find qmmp-plugin-pack-svn -iname \*_code.ts -exec linguist "{}" \;
+}}}
 
 
 9. Go to src/Ui/qsui/txt/txt and create text file with name (qsui_authors_code.txt). Use qsui_author_en.txt as reference.
