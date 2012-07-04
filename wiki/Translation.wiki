@@ -313,6 +313,6 @@ svn diff > qmmp_plugins_new_translation_code.diff
 
 
 ==Links==
-http://doc.qt.nokia.com/4.7-snapshot/linguist-manual.html
+http://qt-project.org/doc/qt-4.8/linguist-manual.html
 
 _feedback: forkotov02 AT hotmail.ru_
