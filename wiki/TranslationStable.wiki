@@ -1,0 +1,318 @@
+= Qmmp translation howto (for stable branch) =
+
+==How to update existing translation==
+
+1. Install Qt Linguist and subversion.
+
+2. Download latest source using svn.
+
+{{{
+svn checkout http://qmmp.googlecode.com/svn/branches/qmmp-0.6 qmmp-svn
+}}}
+
+3. Find all files with mask `*_code.ts` inside downloaded sources and update them using qt linguist. (code - your locale code, i.e. ru - Russian, zh_CN - Chinese simplified, etc).
+
+
+You can use following command:
+{{{
+find qmmp-svn -iname \*_code.ts -exec linguist "{}" \;
+}}}
+
+4. Go to qmmp-svn/ui/src/qmmpui/txt and update 4 text files (authors_code.txt description_code.txt thanks_code.txt translators_code.txt) with help of your favourite text editor.
+
+5. Go to qmmp sources and create patch.
+{{{
+cd qmmp-svn
+svn diff > qmmp_translation_update_code.diff
+}}}
+
+6. Send qmmp_translation_update_code.diff to forkotov02 AT hotmail.ru
+
+
+==How to create new translation==
+
+1. Install Qt Linguist and subversion.
+
+2. Download latest source using svn.
+
+{{{
+svn checkout http://qmmp.googlecode.com/svn/branches/qmmp-0.6 qmmp-svn
+}}}
+
+3. Determinate your locale code (ru - Russian, sk - Slovak, etc)
+
+4. Open qmmp-svn/qmmp/qmmpui/qmmpui.pro and add your file name to translations list.
+
+Before:
+{{{
+TRANSLATIONS = translations/libqmmpui_ru.ts \
+    translations/libqmmpui_tr.ts \
+    translations/libqmmpui_zh_CN.ts \
+    translations/libqmmpui_cs.ts \
+    translations/libqmmpui_pt_BR.ts \
+    translations/libqmmpui_uk_UA.ts \
+    translations/libqmmpui_zh_TW.ts \
+    translations/libqmmpui_de.ts \
+    translations/libqmmpui_pl_PL.ts \
+    translations/libqmmpui_it.ts \
+    translations/libqmmpui_lt.ts \
+    translations/libqmmpui_hu.ts \
+    translations/libqmmpui_nl.ts \
+    translations/libqmmpui_ja.ts \
+    translations/libqmmpui_es.ts
+}}}
+After
+{{{
+TRANSLATIONS = translations/libqmmpui_ru.ts \
+    translations/libqmmpui_tr.ts \
+    translations/libqmmpui_zh_CN.ts \
+    translations/libqmmpui_cs.ts \
+    translations/libqmmpui_pt_BR.ts \
+    translations/libqmmpui_uk_UA.ts \
+    translations/libqmmpui_zh_TW.ts \
+    translations/libqmmpui_de.ts \
+    translations/libqmmpui_pl_PL.ts \
+    translations/libqmmpui_it.ts \
+    translations/libqmmpui_lt.ts \
+    translations/libqmmpui_hu.ts \
+    translations/libqmmpui_nl.ts \
+    translations/libqmmpui_ja.ts \
+    translations/libqmmpui_es.ts \
+    translations/libqmmpui_code.ts  #code - your locale code
+}}}
+
+5. Update qmmp-svn/src/qmmpui/translations/libqmmpui_locales.qrc
+
+{{{
+<!DOCTYPE RCC>
+<RCC version="1.0">
+  <qresource>
+    <file>qmmp_ru.qm</file>
+    <file>qmmp_tr.qm</file>
+    <file>qmmp_zh_CN.qm</file>
+    <file>qmmp_uk_UA.qm</file>
+    <file>qmmp_zh_TW.qm</file>
+    <file>qmmp_cs.qm</file>
+    <file>qmmp_pt_BR.qm</file>
+    <file>qmmp_de.qm</file>
+    <file>qmmp_pl_PL.qm</file>
+    <file>qmmp_fr.qm</file>
+    <file>qmmp_it.qm</file>
+    <file>qmmp_kk.qm</file>
+    <file>qmmp_lt.qm</file>
+    <file>qmmp_hu.qm</file>
+    <file>qmmp_nl.qm</file>
+    <file>qmmp_ja.qm</file>
+    <file>qmmp_code.qm</file> <!--add this line-->
+  </qresource>
+</RCC>
+}}}
+
+6. Repeat 4-5 steps for all qmmp plugins and libraries.
+
+7. Generate empty translation files.
+{{{
+cd qmmp-svn
+./update-ts.sh
+}}}
+
+8. Find all generated files with mask `*_code.ts` inside downloaded sources and update them with qt linguist.
+
+You can use following command:
+{{{
+find qmmp-svn -iname \*_code.ts -exec linguist "{}" \;
+}}}
+
+
+9. Go to qmmp-svn/src/qmmpui/txt and create 4 text files (authors_code.txt description_code.txt, thanks_code.txt, translators_code.txt). Use authors_en.txt description_en.txt, thanks_en.txt and translators_en.txt as reference.
+
+10. Update qmmp-svn/src/qmmpui/txt/txt.qrc
+{{{
+<!DOCTYPE RCC>
+<RCC version="1.0">
+  <qresource>
+  ................
+
+    <!-- add this 4 lines -->
+    <file>authors_code.txt</file>
+    <file>thanks_code.txt</file>       
+    <file>translators_code.txt</file>  
+    <file>description_code.txt</file>
+
+   ..............
+</RCC>
+}}}
+
+11. Add all new files to svn.
+{{{
+cd qmmp-svn
+svn add --force --depth=infinity *
+}}}
+
+12. Create patch with new translations.
+{{{
+svn diff > qmmp_new_translation_code.diff
+}}}
+
+13. Send qmmp_translation_update_code.diff to forkotov02 AT hotmail.ru
+
+= Qmmp Plugin Pack translation howto =
+
+==How to update existing translation==
+
+1. Install Qt Linguist and subversion.
+
+2. Download latest source using svn.
+
+{{{
+svn checkout http://qmmp.googlecode.com/svn/branches/qmmp-plugin-pack-0.6 qmmp-plugin-pack-svn
+}}}
+
+3. Find all files with mask `*_code.ts` inside downloaded sources and update them using qt linguist. (code - your locale code, i.e. ru - Russian, zh_CN - Chinese simplified, etc).
+
+You can use following command:
+{{{
+find qmmp-plugin-pack-svn -iname \*_code.ts -exec linguist "{}" \;
+}}}
+
+4. Go to qmmp-plugin-pack-svn/src/Ui/qsui/txt and update qsui_authors_code.txt  with help of your favourite text editor. 
+
+5. Go to qmmp-plugin-pack sources and create patch.
+{{{
+cd qmmp-plugin-pack-svn
+svn diff > plugins_translation_update_code.diff
+}}}
+
+6. Send plugins_translation_update_code.diff to forkotov02 AT hotmail.ru
+
+
+==How to create new translation==
+
+1. Install Qt Linguist and subversion.
+
+2. Download latest source using svn.
+
+{{{
+svn checkout http://qmmp.googlecode.com/svn/branches/qmmp-plugin-pack-0.6 qmmp-plugin-pack-svn
+}}}
+
+3. Determinate your locale code (ru - Russian, sk - Slovak, etc)
+
+4. Open qmmp-plugin-pack-svn/src/Ui/qsui/qsui.pro and add your file name to translations list.
+
+Before:
+{{{
+TRANSLATIONS = translations/qsui_plugin_ru.ts \
+    translations/qsui_plugin_tr.ts \
+    translations/qsui_plugin_zh_CN.ts \
+    translations/qsui_plugin_cs.ts \
+    translations/qsui_plugin_pt_BR.ts \
+    translations/qsui_plugin_uk_UA.ts \
+    translations/qsui_plugin_zh_TW.ts \
+    translations/qsui_plugin_de.ts \
+    translations/qsui_plugin_pl_PL.ts \
+    translations/qsui_plugin_it.ts \
+    translations/qsui_plugin_lt.ts \
+    translations/qsui_plugin_hu.ts \
+    translations/qsui_plugin_nl.ts \
+    translations/qsui_plugin_ja.ts \
+    translations/qsui_plugin_es.ts
+}}}
+After
+{{{
+TRANSLATIONS = translations/qsui_plugin_ru.ts \
+    translations/qsui_plugin_tr.ts \
+    translations/qsui_plugin_zh_CN.ts \
+    translations/qsui_plugin_cs.ts \
+    translations/qsui_plugin_pt_BR.ts \
+    translations/qsui_plugin_uk_UA.ts \
+    translations/qsui_plugin_zh_TW.ts \
+    translations/qsui_plugin_de.ts \
+    translations/qsui_plugin_pl_PL.ts \
+    translations/qsui_plugin_it.ts \
+    translations/qsui_plugin_lt.ts \
+    translations/qsui_plugin_hu.ts \
+    translations/qsui_plugin_nl.ts \
+    translations/qsui_plugin_ja.ts \
+    translations/qsui_plugin_es.ts \
+    translations/qsui_plugin_code.ts  #code - your locale code
+}}}
+
+5. Update qmmp-plugin-pack-svn/src/Ui/qsui/translations/translations.qrc
+
+{{{
+<!DOCTYPE RCC>
+<RCC version="1.0">
+  <qresource>
+    <file>qsui_plugin_ru.qm</file>
+    <file>qsui_plugin_tr.qm</file>
+    <file>qsui_plugin_zh_CN.qm</file>
+    <file>qsui_plugin_uk_UA.qm</file>
+    <file>qsui_plugin_zh_TW.qm</file>
+    <file>qsui_plugin_cs.qm</file>
+    <file>qsui_plugin_pt_BR.qm</file>
+    <file>qsui_plugin_de.qm</file>
+    <file>qsui_plugin_pl_PL.qm</file>
+    <file>qsui_plugin_fr.qm</file>
+    <file>qsui_plugin_it.qm</file>
+    <file>qsui_plugin_kk.qm</file>
+    <file>qsui_plugin_lt.qm</file>
+    <file>qsui_plugin_hu.qm</file>
+    <file>qsui_plugin_nl.qm</file>
+    <file>qsui_plugin_ja.qm</file>
+    <file>qsui_plugin_code.qm</file> <!--add this line-->
+  </qresource>
+</RCC>
+}}}
+
+6. Repeat 4-5 steps for all qmmp plugins and libraries.
+
+7. Generate empty translation files.
+{{{
+cd qmmp-plugin-pack-svn
+./update-ts.sh
+}}}
+
+8. Find all generated files with mask `*_code.ts` inside downloaded sources and update them with qt linguist.
+
+
+You can use following command:
+{{{
+find qmmp-plugin-pack-svn -iname \*_code.ts -exec linguist "{}" \;
+}}}
+
+
+9. Go to src/Ui/qsui/txt/txt and create text file with name (qsui_authors_code.txt). Use qsui_author_en.txt as reference.
+
+10. Update qmmp-svn/src/qmmpui/txt/txt.qrc
+{{{
+<!DOCTYPE RCC>
+<RCC version="1.0">
+  <qresource>
+  ................
+
+    <!-- add this line -->
+    <file>qsui_authors_code.txt</file>
+   
+   ..............
+</RCC>
+}}}
+
+11. Add all new files to svn.
+{{{
+cd qmmp-plugin-pack-svn
+svn add --force --depth=infinity *
+}}}
+
+12. Create patch with new translations.
+{{{
+svn diff > qmmp_plugins_new_translation_code.diff
+}}}
+
+13. Send qmmp_plugins_new_translation_code.diff to forkotov02 AT hotmail.ru
+
+
+==Links==
+http://qt-project.org/doc/qt-4.8/linguist-manual.html
+
+_feedback: forkotov02 AT hotmail.ru_
