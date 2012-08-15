@@ -1,0 +1,19 @@
+Changelog of Qmmp Plugin Pack
+
+--------------
+Version 0.6.0
+* initial release
+
+Version 0.6.1
+* added feature to disable assembler optimizations in the FFap plugin
+* fixed documentation
+* fixed playlist scrolling
+* fixed build
+* updated Ukrainian translation (Gennadi Motsyo)
+
+Version 0.6.2
+* fixed FSF address
+* fixed some bugs in cmake files
+* removed executable stack from libffap.so (thanks to Karel Volný)
+* fixed crash in the playlist popup message
+* updated Lithuanian translation (Algirdas Butkus)
