@@ -52,7 +52,7 @@ After
 {{{
 #!/bin/sh
 
-LOCALES='ru uk_UA zh_CN zh_TW tr cs pt_BR de pl_PL fr it kk lt hu nl ja es *sk*'
+LOCALES='ru uk_UA zh_CN zh_TW tr cs pt_BR de pl_PL fr it kk lt hu nl ja es sk'
 }}}
 
 5. Generate empty translation files.
@@ -156,7 +156,7 @@ After
 {{{
 #!/bin/sh
 
-LOCALES='ru uk_UA zh_CN zh_TW tr cs pt_BR de pl_PL fr it kk lt hu nl ja es *sk*'
+LOCALES='ru uk_UA zh_CN zh_TW tr cs pt_BR de pl_PL fr it kk lt hu nl ja es sk'
 }}}
 
 5. Generate empty translation files.
