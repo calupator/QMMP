@@ -1,3 +1,4 @@
+#summary Qmmp translation howto (for stable branch)
 #labels Featured
 = Qmmp translation howto (Stable branch) =
 
