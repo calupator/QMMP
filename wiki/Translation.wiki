@@ -1,3 +1,4 @@
+#summary Qmmp translation howto
 = Qmmp translation howto =
 
 ==How to update existing translation==
