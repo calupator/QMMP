@@ -1,4 +1,5 @@
 #summary Qmmp translation howto
+#labels Featured
 = Qmmp translation howto =
 
 ==How to update existing translation==
