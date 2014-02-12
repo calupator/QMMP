@@ -1,5 +1,5 @@
+#summary Alternate download page. Thanks to Google!
 #labels Featured
-#Alternate download page. Thanks to Google!
 
 = Sources =
 
