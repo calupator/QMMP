@@ -1,0 +1,15 @@
+#labels Featured
+#Alternate download page. Thanks to Google!
+
+= Sources =
+
+  * [http://qmmp.ylsoftware.com/files/qmmp-0.7.5.tar.bz2 qmmp-0.7.5.tar.bz2]
+  * [http://qmmp.ylsoftware.com/files/plugins/qmmp-plugin-pack-0.7.5.tar.bz2 qmmp-plugin-pack-0.7.5.tar.bz2]
+
+
+= Other links =
+
+  * [http://qmmp.ylsoftware.com/ Qmmp Home Page]
+  * [http://qmmp.ylsoftware.com/plugins.php Qmmp Plugin Pack Home Page]
+  * [http://qmmp.ylsoftware.com/downloads.php Qmmp Downloads]
+  * [http://qmmp.ylsoftware.com/downloads.php Qmmp Plugin Pack Downloads]
