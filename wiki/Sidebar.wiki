@@ -1,5 +1,6 @@
  * [QMMPWikiWelcome Welcome]
  * [Introduction Introduction]
- * [ToC Table of Contents]
+ * [Translation	Qmmp translation howto]
+ * [TranslationStable Qmmp translation howto (stable branch)]
  * [qmmp_packages Packages]
- * [Downloads  	Downloads]
+ * [Downloads  Downloads]
