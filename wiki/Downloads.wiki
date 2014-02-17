@@ -14,4 +14,4 @@
   * [http://qmmp.ylsoftware.com/ Qmmp Home Page]
   * [http://qmmp.ylsoftware.com/plugins.php Qmmp Plugin Pack Home Page]
   * [http://qmmp.ylsoftware.com/downloads.php Qmmp Downloads]
-  * [http://qmmp.ylsoftware.com/downloads.php Qmmp Plugin Pack Downloads]
+  * [http://qmmp.ylsoftware.com/plugins.php Qmmp Plugin Pack Downloads]
