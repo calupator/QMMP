@@ -15,3 +15,4 @@
   * [http://qmmp.ylsoftware.com/plugins.php Qmmp Plugin Pack Home Page]
   * [http://qmmp.ylsoftware.com/downloads.php Qmmp Downloads]
   * [http://qmmp.ylsoftware.com/plugins.php Qmmp Plugin Pack Downloads]
+  * [http://qmmp.ylsoftware.com/files/skins/ Qmmp/Winamp/Xmms Skins]
