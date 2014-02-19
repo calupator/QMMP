@@ -1,4 +1,5 @@
 #summary A wiki page listing all qmmp packages
+#labels Deprecated
 
 == Arch Linux ==
 The latest stable releases of Qmmp can be found in the official `[community]` repository of Arch Linux.
