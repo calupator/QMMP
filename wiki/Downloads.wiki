@@ -5,7 +5,7 @@
 
   * [http://qmmp.ylsoftware.com/files/qmmp-0.7.5.tar.bz2 qmmp-0.7.5.tar.bz2]
   * [http://qmmp.ylsoftware.com/files/plugins/qmmp-plugin-pack-0.7.5.tar.bz2 qmmp-plugin-pack-0.7.5.tar.bz2]
-  * [http://code.google.com/p/qmmp/downloads/list Legacy Files]
+  * [http://code.google.com/p/qmmp/downloads/list?can=1 Legacy Files]
   * [http://forkotov02.hotmail.ru/backup/files/ Unofficial Mirror]
 
 
