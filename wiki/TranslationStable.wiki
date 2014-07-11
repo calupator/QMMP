@@ -9,7 +9,7 @@
 2. Download latest source using svn.
 
 {{{
-svn checkout http://qmmp.googlecode.com/svn/branches/qmmp-0.7 qmmp-svn
+svn checkout http://qmmp.googlecode.com/svn/branches/qmmp-0.8 qmmp-svn
 }}}
 
 3. Find all files with mask `*_code.ts` inside downloaded sources and update them using qt linguist. (code - your locale code, i.e. ru - Russian, zh_CN - Chinese simplified, etc).
@@ -37,7 +37,7 @@ svn diff > qmmp_translation_update_code.diff
 2. Download latest source using svn.h
 
 {{{
-svn checkout http://qmmp.googlecode.com/svn/branches/qmmp-0.7 qmmp-svn
+svn checkout http://qmmp.googlecode.com/svn/branches/qmmp-0.8 qmmp-svn
 }}}
 
 3. Determinate your locale code (ru - Russian, sk - Slovak, etc)
@@ -113,7 +113,7 @@ svn diff > qmmp_new_translation_code.diff
 2. Download latest source using svn.
 
 {{{
-svn checkout http://qmmp.googlecode.com/svn/branches/qmmp-plugin-pack-0.7 qmmp-plugin-pack-svn
+svn checkout http://qmmp.googlecode.com/svn/branches/qmmp-plugin-pack-0.8 qmmp-plugin-pack-svn
 }}}
 
 3. Find all files with mask `*_code.ts` inside downloaded sources and update them using qt linguist. (code - your locale code, i.e. ru - Russian, zh_CN - Chinese simplified, etc).
@@ -141,7 +141,7 @@ svn diff > plugins_translation_update_code.diff
 2. Download latest source using svn.
 
 {{{
-svn checkout http://qmmp.googlecode.com/svn/branches/qmmp-plugin-pack-0.7 qmmp-plugin-pack-svn
+svn checkout http://qmmp.googlecode.com/svn/branches/qmmp-plugin-pack-0.8 qmmp-plugin-pack-svn
 }}}
 
 3. Determinate your locale code (ru - Russian, sk - Slovak, etc)
