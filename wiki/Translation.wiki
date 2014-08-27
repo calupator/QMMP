@@ -81,7 +81,7 @@ find qmmp-svn -iname \*_code.ts -exec linguist "{}" \;
   <qresource>
   ................
 
-    <!-- add this 4 lines -->
+    <!-- add these 4 lines -->
     <file>authors_code.txt</file>
     <file>thanks_code.txt</file>       
     <file>translators_code.txt</file>  
