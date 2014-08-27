@@ -1,5 +1,8 @@
 #summary Qmmp translation howto
 #labels Featured
+
+*Attention!* Alternately you can use [https://www.transifex.com/organization/qmmp-development-team/dashboard Transifex] service.
+
 = Qmmp translation howto =
 
 ==How to update existing translation==
