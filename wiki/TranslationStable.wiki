@@ -1,5 +1,8 @@
 #summary Qmmp translation howto (for stable branch)
 #labels Featured
+
+*Attention!* Alternately you can use [https://www.transifex.com/organization/qmmp-development-team/dashboard Transifex] service.
+
 = Qmmp translation howto (Stable branch) =
 
 ==How to update existing translation==
