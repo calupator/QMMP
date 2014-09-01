@@ -2,5 +2,6 @@
  * [Introduction Introduction]
  * [Translation	Qmmp translation howto]
  * [TranslationStable Qmmp translation howto (stable branch)]
+ * [WinBuild How to build Qmmp for MS Windows]
  * [qmmp_packages Packages]
  * [Downloads  Downloads]
