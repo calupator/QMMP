@@ -1,0 +1,97 @@
+#summary How to build win32 version
+#labels Featured
+
+= How to build Qmmp for MS Windows =
+
+1. Install [http://www.7-zip.org/ 7-Zip] and [http://nsis.sourceforge.net/ NSIS]
+
+2. Create inital directory structure
+{{{
+C:/devel
+     |--mingw32
+     |--msys
+     |--mingw32-libs
+}}}
+
+3. Download latest i686-4.9.1-release-posix-dwarf-rt_v3-rev0.7z from [http://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win32/Personal%20Builds/mingw-builds/4.9.1/threads-posix/dwarf/ here] and unpack it to C:/devel/mingw32
+
+4. Download msys+7za+wget+svn+git+mercurial+cvs-rev13.7z from [http://sourceforge.net/projects/mingwbuilds/files/external-binary-packages/ here] and unpack it to C:/devel/msys
+
+5. Create environment variables PATH and QTDIR with the following content:
+{{{
+PATH=C:\devel\msys\bin;C:\devel\qt4\bin;C:\devel\mingw32\bin;C:\devel\mingw32-libs\bin;C:\Program Files (x86)\7-Zip
+QTDIR=C:\devel\qt4
+}}}
+
+6. Download latest Qt4 snapshot. You should start cmd.exe and execute the following commands:
+{{{
+cd C:/devel/
+git clone git://gitorious.org/qt/qt.git qt4
+git checkout 4.8
+}}}
+Do not close cmd.exe before next step.
+
+7. Apply patches to Qt4:
+{{{
+cd qt4
+wget http://qmmp.googlecode.com/svn/trunk/patches/qt-4.8.6-fix-win7-tooltip.diff
+cat qt-4.8.6-fix-win7-tooltip.diff | patch -p1
+}}}
+Do not close cmd.exe before next step.
+
+8. Compile Qt4 using the following commands:
+{{{
+configure -nomake demos -nomake examples
+cd tools
+cd configure
+qmake
+mingw32-make
+cd ..
+cd ..
+mingw32-make confclean
+configure -nomake demos -nomake examples
+mingw32-make -j4
+}}}
+
+9. Download qmmp build scripts
+{{{
+cd C:\devel
+svn co http://qmmp.googlecode.com/svn/trunk/extras/package/win32/ qmmp-win32
+}}}
+
+10. Check paths in the following files:
+{{{
+C:\devel\qmmp-win32\start_sh.cmd
+C:\devel\qmmp-win32\qmmp-win32.sh
+C:\devel\qmmp-win32\contrib\mingw-libs.sh
+C:\devel\qmmp-win32\contrib\start_sh.cmd
+}}}
+
+11. Install all requied libraries. You should start C:\devel\qmmp-win32\contrib\start_sh.cmd and execute the following commands:
+{{{
+./mingw-libs.sh --download
+./mingw-libs.sh --install
+}}}
+
+12. Open c:\devel\qt4\mkspecs\win32-g++\qmake.conf and change following lines:
+{{{
+#before
+QMAKE_INCDIR		=
+QMAKE_INCDIR_QT		= $$[QT_INSTALL_HEADERS]
+QMAKE_LIBDIR_QT		= $$[QT_INSTALL_LIBS]
+
+#after
+QMAKE_INCDIR		+= C:/devel/mingw32-libs/include
+QMAKE_LIBDIR            += C:/devel/mingw32-libs/lib
+QMAKE_INCDIR_QT		= $$[QT_INSTALL_HEADERS]
+QMAKE_LIBDIR_QT		= $$[QT_INSTALL_LIBS]
+}}}
+
+13. Compile and prepare qmmp package. You should start C:\devel\qmmp-win32\start_sh.cmd and execute the following commands:
+{{{
+./qmmp-win32.sh --download
+./qmmp-win32.sh --install
+}}}
+
+14. All requied files will be in the directory C:\devel\qmmp-win32\tmp\qmmp-distr. Add extra files, modify qmmp.nsi and create package
+using nsis installed before.
