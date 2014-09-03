@@ -3,7 +3,7 @@
 
 = How to build Qmmp for MS Windows =
 
-1. Install [http://www.7-zip.org/ 7-Zip] and [http://nsis.sourceforge.net/ NSIS]
+1. Install [http://www.7-zip.org/ 7-Zip], [http://nsis.sourceforge.net/ NSIS] and [http://www.cmake.org/ CMake]
 
 2. Create inital directory structure
 {{{
@@ -27,6 +27,7 @@ QTDIR=C:\devel\qt4
 {{{
 cd C:/devel/
 git clone git://gitorious.org/qt/qt.git qt4
+cd qt4
 git checkout 4.8
 }}}
 Do not close cmd.exe before next step.
