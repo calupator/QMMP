@@ -34,7 +34,6 @@ Do not close cmd.exe before next step.
 
 7. Apply patches to Qt4:
 {{{
-cd qt4
 wget http://qmmp.googlecode.com/svn/trunk/patches/qt-4.8.6-fix-win7-tooltip.diff
 cat qt-4.8.6-fix-win7-tooltip.diff | patch -p1
 }}}
