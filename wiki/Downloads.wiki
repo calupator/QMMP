@@ -3,14 +3,14 @@
 
 = Sources =
 
-  * [http://qmmp.ylsoftware.com/files/qmmp-0.8.1.tar.bz2 qmmp-0.8.1.tar.bz2]
-  * [http://qmmp.ylsoftware.com/files/plugins/qmmp-plugin-pack-0.8.1.tar.bz2 qmmp-plugin-pack-0.8.1.tar.bz2]
+  * [http://qmmp.ylsoftware.com/files/qmmp-0.8.2.tar.bz2 qmmp-0.8.2.tar.bz2]
+  * [http://qmmp.ylsoftware.com/files/plugins/qmmp-plugin-pack-0.8.2.tar.bz2 qmmp-plugin-pack-0.8.2.tar.bz2]
   * [http://code.google.com/p/qmmp/downloads/list?can=1 Legacy Files]
 
 = Google Drive Mirror =
 
-  * [https://googledrive.com/host/0B6qIAC70dt4-UEE4aTJxOUFsVmM/qmmp-0.8.1.tar.bz2 qmmp-0.8.1.tar.bz2]
-  * [https://googledrive.com/host/0B6qIAC70dt4-NnMzWWZtdy1YSzQ/qmmp-plugin-pack-0.8.1.tar.bz2 qmmp-plugin-pack-0.8.1.tar.bz2]
+  * [https://googledrive.com/host/0B6qIAC70dt4-UEE4aTJxOUFsVmM/qmmp-0.8.2.tar.bz2 qmmp-0.8.2.tar.bz2]
+  * [https://googledrive.com/host/0B6qIAC70dt4-NnMzWWZtdy1YSzQ/qmmp-plugin-pack-0.8.2.tar.bz2 qmmp-plugin-pack-0.8.2.tar.bz2]
 
 = Other links =
 
