@@ -13,7 +13,7 @@ C:/devel
      |--mingw32-libs
 }}}
 
-3. Download latest i686-4.9.1-release-posix-dwarf-rt_v3-rev0.7z from [http://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win32/Personal%20Builds/mingw-builds/4.9.1/threads-posix/dwarf/ here] and unpack it to C:/devel/mingw32
+3. Download latest i686-4.9.2-release-posix-dwarf-rt_v3-rev1.7z from [http://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win32/Personal%20Builds/mingw-builds/4.9.2/threads-posix/dwarf/ here] and unpack it to C:/devel/mingw32
 
 4. Download msys+7za+wget+svn+git+mercurial+cvs-rev13.7z from [http://sourceforge.net/projects/mingwbuilds/files/external-binary-packages/ here] and unpack it to C:/devel/msys
 
